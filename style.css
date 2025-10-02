@@ -1,0 +1,460 @@
+/* General */
+body {
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    margin-bottom: 120px;
+    background: url("Images/Pattern.png") repeat;
+    color: #3b2c20;
+  }
+  
+  /* Header */
+  header {
+    background: url("Images/CafeBanner.png") no-repeat center/cover;
+    padding: 2rem;
+    text-align: center;
+    min-height: 10vh;
+    border-bottom: 2px solid #000000;
+  }
+  
+  .menu-header {
+    background: url("Images/MenuBanner.png") no-repeat center/cover;
+    padding: 2rem;
+    text-align: center;
+    min-height: 10vh;
+  }
+  
+  .event-header {
+    background: url("Images/eventsBanner.png") no-repeat center/cover;
+    padding: 2rem;
+    text-align: center;
+    min-height: 10vh;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+  }
+  
+  /* Index */  
+  .welcome-card {
+    background: url(Images/HomeImage.png) no-repeat center/cover;
+    border: 2px solid #954b0f;
+    border-radius: 8px;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    text-align: center;
+    max-width: 1050px;
+    box-sizing: border-box;
+  }
+  
+  .welcome-left {
+    background: #E6D4C0;
+    max-width: 400px;
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+      font-size: 50px; 
+      line-height: 50px; 
+      margin: 0%;
+  }
+  
+  .welcome-left button{
+    background: black;
+    color: whitesmoke;
+    border-radius: 20px;
+    padding: 0.5rem;
+    cursor:pointer;
+    transition: all 0.3s ease; /* smooth animation */
+  }
+  
+  .welcome-left button:hover {
+    background: #333;
+    color: #eab67c;
+    transform: scale(1.05);
+  }
+  
+  .promo-card {
+    background: #fff;
+    border: 3px dotted #954b0f;
+    border-radius: 8px;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    padding-top: 0;
+    text-align: center;
+    max-width: 1000px;
+  }
+  
+  .promo-items {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .promo-items figure {
+    margin: 0;
+  }
+  
+  .promo-items img {
+    width: clamp(20vh, 25vw, 300px);
+    height: auto;
+    border-radius: 8px;
+    border: 2px dotted;
+  }
+  
+  .contact {
+    background: #e1c8a9;
+    border: 2px solid;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 1rem auto;
+    max-width: 980px;
+  }
+  
+  .contact-grid {
+    display: grid;
+    grid-template-areas: 
+      "title info"
+      "map info";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    align-items: start;
+  }
+  
+  .contact-title {
+    grid-area: title;
+    text-align: center;
+    margin: 0;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: #3b2c20;
+  }
+  
+  .contact-map img {
+    width: 90%;
+    border-radius: 8px;
+  }
+  
+  .contact-info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    font-size: 19px;
+  }
+  
+  .contact-info p{
+    margin-top:-23px;
+  }
+  
+  /* Menu */
+  .menu {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .menu-header-wrapper {
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    padding: 1px 2px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    border: 2px solid #954b0f;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #d0ae92;
+  }
+  
+  .menu-table th:first-child,
+  .menu-table td:first-child {
+    border-right: 2px solid #954b0f;
+    padding-right: 1rem;
+    width: 50px;
+  }
+  
+  .menu-table thead tr {
+    border-bottom: 2px solid #954b0f;
+  }
+  
+  .menu-table tr:hover {
+    background-color: #e6d4c0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-table th {
+    background-color: #f8f2eb;
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+  
+  .menu-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+  
+  .menu-table th img,
+  .menu-table td img {
+    width: 50px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .menu-notes {
+    background-color: #be9573;
+    padding: 1px 10px;
+    border-radius: 8px;
+  }
+  
+  .menu-notes ul{
+    margin-top: -15px; 
+  }
+  
+  /* Events */
+  .events {
+    display: flex;           
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem; 
+  }
+  
+  .event-card {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 600px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  .event-card img {
+    width: 200px;
+    border-radius: 6px;
+  }
+  
+  /* Footer */
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    min-height: 90px;
+    background: #be9573;
+    border-top: 2px solid #000;
+    color: white;
+    padding: 10px 2rem;
+    padding-left: 10vw;
+    box-sizing: border-box;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .footer-logo:hover{
+    transform: rotate(360deg);
+  }
+  
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .footer-right {
+    max-width: 500px;
+    text-align: right;
+  }
+  
+  /* Navigation */
+  nav a {
+    text-decoration: none;
+    color: #954b0f;
+    font-weight: bold;
+  }
+  
+  nav td a.active {
+    color: #582b06;
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  .footer-nav {
+    border-collapse: collapse;
+  }
+  
+  .footer-nav td {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-left: 2px solid #954b0f;
+    border-right: 2px solid #954b0f;
+  }
+  
+  .footer-nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffebdb;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav a:hover {
+    color: black;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 1140px) {
+    .welcome-card{
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  
+    .promo-card{
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  
+    .contact{
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+  
+  @media (max-width: 980px) {
+    .footer-right {
+      max-width: 300px;
+      text-align: right;
+    }
+  }
+  
+  @media (max-width: 840px) {
+    header {
+      background: url("Images/Mobile-Home-Banner.png") no-repeat center/cover;
+      min-height: 50px;
+    }
+  
+    .menu-header {
+      min-height: 50px;
+    }
+  
+    .event-header {
+      min-height: 50px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-grid {
+      grid-template-areas:
+        "title"
+        "map"
+        "info";
+      grid-template-columns: 1fr;
+    }
+  
+    .contact-map img {
+      width: 100%;
+    }  
+    .promo-items {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .footer-credit {
+      display: none;
+    }
+
+    .promo-items img {
+    width: clamp(20vh, 80%, 300px);
+    height: auto;
+    border-radius: 8px;
+    border: 2px dotted;
+  }
+  }
+  
+  @media (max-width: 635px) {
+    .event-card {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .event-card img {
+      width: 100%;
+      max-width: 280px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer-logo {
+      height: 60px;
+    }
+  
+    .promo-card,
+    .contact,
+    .menu {
+      padding: 1rem;
+    }
+  
+      .welcome-card {
+      width: 91%;
+      padding: 0.75rem;
+    }
+  
+    .welcome-left {
+      max-width: 300px;
+      padding: 0.75rem;
+    }
+  
+    .welcome-left h1 {
+      font-size: 40px; 
+      line-height: 50px; 
+      margin: 0%;
+    }
+    
+    .welcome-left p {
+      font-size: 12px;
+    }
+  
+  }
+  
+  @media (max-width: 375px) {
+    .footer-nav td {
+    padding: 0.5rem;
+    text-align: center;
+    }
+  }
